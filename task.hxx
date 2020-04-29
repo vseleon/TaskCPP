@@ -31,14 +31,7 @@ int main()
 	productAmount.insert(make_pair("5410228141266", 0));
 
 	ofstream outfile("kuitti.txt");
-
-	map<string, float>::iterator it = products.begin();
-	while (it != products.end())
-	{
-		cout << it->first << " :: " << it->second << endl;
-		it++;
-	}
-
+	
 	while (strInput != "0000000000001")
 	{
 		cin >> strInput;
@@ -118,18 +111,6 @@ int main()
 					products.erase(num);
 					productNames.erase(num);
 				}
-
-				if (answer == 3)
-				{
-					cout << "-------------" << endl;
-					map<string, float>::iterator it = products.begin();
-					while (it != products.end())
-					{
-						cout << it->first << " :: " << it->second << endl;
-						it++;
-					}
-				}
-
 			}
 		}
 		else
