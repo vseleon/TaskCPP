@@ -1,5 +1,5 @@
-//#include "stdafx.h"
 
+//This is task from Cisco C++ course, Created by Leonid Nozdrin.
 
 #include <iostream>
 #include <iomanip>
